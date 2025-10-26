@@ -1,0 +1,85 @@
+body{
+  background: #EE6E73;
+
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 430px;
+  padding-top: 8%;
+}
+
+#banner{ 
+  width: 24%; 
+  margin-top: -6%; 
+  margin-left: 10%; 
+  position: absolute; 
+  z-index: 1; 
+}
+
+.curve {
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.curve::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  transform: translate(85%, 60%);
+  z-index: 1;
+  background-color: #ee6e73;
+}
+
+.curve::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  transform: translate(-4%, 40%);
+  background-color: white;
+  z-index: -1;
+}
+
+.card{
+  border: 4px white solid;
+}
+
+.card-title{
+  margin-top: -6%;
+}
+
+.card-action{
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  #Avaliacao{
+    height: 26%;
+  }
+  #FotoUsuario{
+    margin-top: -23%;
+  }
+}
+
+@media (max-width: 992px) {
+  #Logo{
+    text-align: center;
+    width: 380px;
+  }
+  #banner{
+    width: 0px;
+  }
+}
