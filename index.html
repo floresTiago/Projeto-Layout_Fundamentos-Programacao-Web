@@ -10,10 +10,10 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-    <body>
+    <body class="pink">
         <!--NavBar-->
         <div class="navbar-fixed">
-            <nav>
+            <nav class="pink">
                 <a href="#" data-target="slide-out" class="sidenav-trigger">
                     <i class="material-icons">menu</i>
                 </a>
@@ -24,23 +24,26 @@
 
                     <!--Menu-->
                     <ul class="right hide-on-med-and-down">
-                        <li class="active"><a href="#"><i class="material-icons left">home</i>Início</a></li>
-                        <li><a href="#"><i class="material-icons left">info</i>Quem somos</a></li>
-                        <li><a href="#"><i class="material-icons left">pets</i>Adote</a></li>
-                        <li><a href="#"><i class="material-icons left">attach_money</i>Ajude</a></li>
+                        <li class="active"><a onclick="mostrarToast()" href="#"><i class="material-icons left">home</i>Início</a></li>
+                        <li><a onclick="mostrarToast()" href="#"><i class="material-icons left">info</i>Quem somos</a></li>
+                        <li><a onclick="mostrarToast()" href="#"><i class="material-icons left">pets</i>Adote</a></li>
+                        <li><a onclick="mostrarToast()" href="#"><i class="material-icons left">attach_money</i>Ajude</a></li>
                         <li>
-                            <div class="waves-effect waves-light btn"><i class="material-icons left" style="margin-top: -8%;">person_outline</i>Entre/Cadastre-se</div>
+                            <div onclick="mostrarToast()" class="waves-effect waves-light btn blue"><i class="material-icons left" style="margin-top: -8%;">person_outline</i>Entre/Cadastre-se</div>
                         </li>
                     </ul>
 
                     <!--Menu Responsivo-->
                     <ul id="slide-out" class="sidenav">
-                        <li class="active"><a href="#"><i class="material-icons left">home</i>Início</a></li>
-                        <li><a href="#"><i class="material-icons left">info</i>Quem somos</a></li>
-                        <li><a href="#"><i class="material-icons left">pets</i>Adote</a></li>
-                        <li><a href="#"><i class="material-icons left">attach_money</i>Ajude</a></li>
+
+                        <li><a href="#!" onclick="fecharSidenav()" class="right"><i class="material-icons left">arrow_back</i>Voltar</a></li>
+                        <br>
+                        <li class="active"><a onclick="mostrarToast()" href="#" class="pink-text"><i class="material-icons left">home</i>Início</a></li>
+                        <li><a onclick="mostrarToast()" href="#" class="pink-text"><i class="material-icons left">info</i>Quem somos</a></li>
+                        <li><a onclick="mostrarToast()" href="#" class="pink-text"><i class="material-icons left">pets</i>Adote</a></li>
+                        <li><a onclick="mostrarToast()" href="#" class="pink-text"><i class="material-icons left">attach_money</i>Ajude</a></li>
                         <li style="text-align: center;">
-                            <div class="waves-effect waves-light btn"><i class="material-icons left" style="margin-top: -8%;">person_outline</i>Entre/Cadastre-se</div>
+                            <div onclick="mostrarToast()" class="waves-effect waves-light btn blue"><i class="material-icons left" style="margin-top: -8%;">person_outline</i>Entre/Cadastre-se</div>
                         </li>
                     </ul>
                 </div>
@@ -54,7 +57,7 @@
                     <img src="images/logotipo.png" style="width: 20%;">
                     <h3>Seja bem-vindo</h3>
                     <p style="text-align: justify;">Somos uma ONG dedicada a conectar solidariedade e necessidade, promovendo ações que transformam vidas através da doação consciente.</p>
-                    <div class="waves-effect waves-light btn"><i class="material-icons left">pets</i>Adote</div>
+                    <div onclick="mostrarToast()" class="waves-effect waves-light btn blue"><i class="material-icons left">pets</i>Adote</div>
                 </div>
                 <div class="col s0 m0 l6">
                     <img id="banner" src="images/caramelo.png">
@@ -76,10 +79,10 @@
                             </div>
                             <div class="card-content">
                                 <span class="card-title">Bolota</span>
-                                <p> 12 anos e não sei mais o que</p>
+                                <p> 6 anos / Macho</p>
                             </div>
                             <div class="card-action">
-                                <div class="waves-effect waves-light btn"><i class="material-icons left">add</i>Ver mais</div>
+                                <div onclick="mostrarToast()" class="waves-effect waves-light btn blue"><i class="material-icons left">add</i>Ver mais</div>
                             </div>
                         </div>
                     </div>
@@ -90,11 +93,11 @@
                                 <img src="images/cachorro2.avif">
                             </div>
                             <div class="card-content">
-                                <span class="card-title">Bolota</span>
-                                <p> 12 anos e não sei mais o que</p>
+                                <span class="card-title">Alfredo</span>
+                                <p> 3 anos / Macho</p>
                             </div>
                             <div class="card-action">
-                                <div class="waves-effect waves-light btn"><i class="material-icons left">add</i>Ver mais</div>
+                                <div onclick="mostrarToast()" class="waves-effect waves-light btn blue"><i class="material-icons left">add</i>Ver mais</div>
                             </div>
                         </div>
                     </div>
@@ -105,11 +108,11 @@
                                 <img src="images/cachorro3.jpg">
                             </div>
                             <div class="card-content">
-                                <span class="card-title">Bolota</span>
-                                <p> 12 anos e não sei mais o que</p>
+                                <span class="card-title">Kiara</span>
+                                <p> 2 meses / Fêmea</p>
                             </div>
                             <div class="card-action">
-                                <div class="waves-effect waves-light btn"><i class="material-icons left">add</i>Ver mais</div>
+                                <div onclick="mostrarToast()" class="waves-effect waves-light btn blue"><i class="material-icons left">add</i>Ver mais</div>
                             </div>
                         </div>
                     </div>
@@ -123,11 +126,11 @@
                                 <img src="images/gato.jpg">
                             </div>
                             <div class="card-content">
-                                <span class="card-title">Bolota</span>
-                                <p> 12 anos e não sei mais o que</p>
+                                <span class="card-title">Gato</span>
+                                <p> 6 anos / Fêmea</p>
                             </div>
                             <div class="card-action">
-                                <div class="waves-effect waves-light btn"><i class="material-icons left">add</i>Ver mais</div>
+                                <div onclick="mostrarToast()" class="waves-effect waves-light btn blue"><i class="material-icons left">add</i>Ver mais</div>
                             </div>
                         </div>
                     </div>
@@ -138,11 +141,11 @@
                                 <img src="images/gato2.jpg">
                             </div>
                             <div class="card-content">
-                                <span class="card-title">Bolota</span>
-                                <p> 12 anos e não sei mais o que</p>
+                                <span class="card-title">Outro Gato</span>
+                                <p> 6 meses / Macho</p>
                             </div>
                             <div class="card-action">
-                                <div class="waves-effect waves-light btn"><i class="material-icons left">add</i>Ver mais</div>
+                                <div onclick="mostrarToast()" class="waves-effect waves-light btn blue"><i class="material-icons left">add</i>Ver mais</div>
                             </div>
                         </div>
                     </div>
@@ -153,18 +156,18 @@
                                 <img src="images/gato3.jpg">
                             </div>
                             <div class="card-content">
-                                <span class="card-title">Bolota</span>
-                                <p> 12 anos e não sei mais o que</p>
+                                <span class="card-title">Mais um gato</span>
+                                <p> 1 ano / Fêmea</p>
                             </div>
                             <div class="card-action">
-                                <div class="waves-effect waves-light btn"><i class="material-icons left">add</i>Ver mais</div>
+                                <div onclick="mostrarToast()" class="waves-effect waves-light btn blue"><i class="material-icons left">add</i>Ver mais</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row center">
-                    <div class="waves-effect waves-light btn"><i class="material-icons left">add</i>Carregar mais</div>
+                    <div onclick="mostrarToast()" class="waves-effect waves-light btn blue"><i class="material-icons left">add</i>Carregar mais</div>
                 </div>
             </div>
         </section>
@@ -243,7 +246,7 @@
                         </div>
                     </div>
                     <div class="row center">
-                        <div class="waves-effect waves-light btn"><i class="material-icons left">add</i>Carregar mais</div>
+                        <div onclick="mostrarToast()" class="waves-effect waves-light btn blue"><i class="material-icons left">add</i>Carregar mais</div>
                     </div>
                     <br>
                     <h4><i class="material-icons">add</i> Mais informações:</h4>
@@ -258,29 +261,43 @@
 
         <!--Rodapé-->
         <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <img src="images/white-logotipo.png" style="width: 20%;">
-                <p class="grey-text text-lighten-4" style="text-align: justify;">Somos uma ONG dedicada a conectar solidariedade e necessidade, promovendo ações que transformam vidas através da doação consciente.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Redes sociais</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
+            <div class="pink">
+                <div class="container">
+                    <div class="row">
+                    <div class="col l6 s12">
+                        <img src="images/white-logotipo.png" style="width: 20%;">
+                        <p class="grey-text text-lighten-4" style="text-align: justify;">Somos uma ONG dedicada a conectar solidariedade e necessidade, promovendo ações que transformam vidas através da doação consciente.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Redes sociais</h5>
+                        <ul>
+                        <li style="display: flex; align-items: center;"><img id="RedesIcon" src="images/icon/facebook_icon.png"><a class="grey-text text-lighten-3" href="#!"> Adopet_Oficial</a></li>
+                        <li style="display: flex; align-items: center;"><img id="RedesIcon" src="images/icon/instagram_icon.png"><a class="grey-text text-lighten-3" href="#!"> Adopet_Ofc</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2025 Copyright
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-                © 2025 Copyright
-            </div>
-          </div>
         </footer>
+
+        <script>
+            //Aviso de função indisponível
+            function mostrarToast(){
+                M.toast({html: '<i class="material-icons">report_problem</i>Funcionalidade indisponível', classes: 'black-text red lighten-3 z-depth-3'});
+            }
+
+            //Fechar navbar responsiva
+            function fecharSidenav() {
+                var elem = document.querySelector('.sidenav');
+                var instance = M.Sidenav.getInstance(elem);
+                instance.close();
+            }
+        </script>
 
         <!--JavaScript-->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

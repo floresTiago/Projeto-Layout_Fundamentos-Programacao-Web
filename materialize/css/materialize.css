@@ -196,11 +196,11 @@
 }
 
 .pink {
-  background-color: #e91e63 !important;
+  background-color: #f35d92 !important;
 }
 
 .pink-text {
-  color: #e91e63 !important;
+  color: #f35d92 !important;
 }
 
 .pink.lighten-5 {
@@ -644,11 +644,11 @@
 }
 
 .blue {
-  background-color: #2196F3 !important;
+  background-color: #269af2 !important;
 }
 
 .blue-text {
-  color: #2196F3 !important;
+  color: #269af2 !important;
 }
 
 .blue.lighten-5 {
@@ -2946,7 +2946,7 @@ ul.staggered-list li {
 .page-footer {
   padding-top: 20px;
   color: #fff;
-  background-color: #ee6e73;
+  background-color: #f35d92;
 }
 
 .page-footer .footer-copyright {
@@ -2966,7 +2966,7 @@ ul.staggered-list li {
           justify-content: space-between;
   padding: 10px 0px;
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(51, 51, 51, 0.08);
+  background-color: rgba(51, 51, 51, 0.1);
 }
 
 table, th, td {
