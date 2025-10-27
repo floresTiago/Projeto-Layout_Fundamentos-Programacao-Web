@@ -84,15 +84,6 @@ section {
   }
 }
 
-@media (min-width: 992px){
-  #Avaliacao{
-    height: 26%;
-  }
-  #FotoUsuario{
-    margin-top: -23%;
-  }
-}
-
 @media (min-width: 1150px) and (max-width: 1221px) {
   #banner{
     width: 30%; 
@@ -123,4 +114,23 @@ section {
   #Titulo{
     margin-top: 15%;
   }
+}
+
+.avaliacao-card {
+  display: flex;
+  flex-direction: column;   
+  align-items: flex-start; 
+  padding: 15px;
+  min-height: 200px; 
+  box-sizing: border-box;
+}
+
+.avaliacao-card span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.foto-usuario img {
+  width: 100%;
 }
