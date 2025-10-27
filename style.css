@@ -74,6 +74,12 @@ section {
   margin: 10px 0;
 }
 
+@media (min-width: 1390px){
+  #banner{
+    width: 21%;
+  }
+}
+
 @media (min-width: 992px){
   #Avaliacao{
     height: 26%;
