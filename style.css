@@ -39,6 +39,10 @@ section {
   background-color: #f35d92;
 }
 
+.curve.ativa::before {
+  background-color: #880e4f;
+}
+
 .curve::after {
   content: '';
   display: block;
