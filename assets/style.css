@@ -57,17 +57,17 @@ section {
 
 /* Card dos animais para adotar */
 .card {
-  border: 10px white solid;
-  border-radius: 7px;
-  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease;
+  border: 10px white solid !important;
+  border-radius: 7px !important;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease !important;
 }
 
 /* Animação de zoom, sombra e cor da borda*/
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.23);
-  cursor: pointer;
-  border-color: #eef06c;
+  transform: scale(1.05) !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.23) !important;
+  cursor: pointer!important;
+  border-color: #eef06c!important;
 }
 
 .card-title{
@@ -169,4 +169,5 @@ section {
 
 .foto-usuario img {
   width: 100%;
+
 }
