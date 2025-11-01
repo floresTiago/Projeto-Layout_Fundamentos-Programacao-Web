@@ -110,4 +110,24 @@ document.addEventListener("DOMContentLoaded", () => {
     botao.addEventListener("click", () => {
         texto5.classList.toggle("text-darken-4");
     });
+
+});
+
+//Animação de aparecimento no scroll das cards
+document.addEventListener("DOMContentLoaded", function() {
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show-card');
+            }
+           else {
+            entry.target.classList.remove('show-card');
+             }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden-card');
+    hiddenElements.forEach((el) => observer.observe(el));
+
 });
