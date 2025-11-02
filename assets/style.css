@@ -19,6 +19,10 @@ section {
   z-index: 1; 
 }
 
+#bannerRodape{
+  text-align: center;
+}
+
 .curve {
   position: absolute;
   height: 130px;
@@ -141,7 +145,7 @@ section {
     text-align: center;
     width: 380px;
   }
-  #banner{
+  #banner, #bannerRodape{
     width: 0px;
   }
 }
